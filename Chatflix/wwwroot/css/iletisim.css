@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;   
+}
+
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    width: 100%;
+    font-family: Montserrat;
+    background-color:black;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    position: fixed;
+    z-index: 500;
+}
+
+#logo-box {
+    float: left;
+    padding-top: 0.3rem;
+}
+
+#logo-box .logo {
+    font-family: 'Bebas Neue';
+    letter-spacing: 5px;
+    color: #E50914;
+    font-size: 5rem;
+
+}
+
+#nav-links {
+    float: right;
+    margin-right: 3em;
+}
+
+#nav-links .nav-item {
+    float: left;
+    margin: 0.7rem;
+
+}
+
+#nav-links .nav-link , #nav-links .nav-linklast {
+   color: #fff;
+   font-size: 1.6rem;
+   font-weight: 700;
+   display: block;
+   padding: 1.6rem;
+   letter-spacing: 0.1rem;
+   transition: 0.4s;
+   
+}
+
+
+.nav-item:last-child{
+    background-color: #E50914;
+    border-radius: 2rem;
+}
+
+#nav-links .nav-link:hover {
+    color: #E50914;
+
+}
+
+#contact {
+    padding-top: calc(113px + 2rem);
+    text-align: center;
+    margin-bottom: 3rem
+}
+
+#contact h1{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 5rem;
+    color:#E50914;
+}
+
+#contact-form{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
+.form-group{
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.form-group input, .form-group textarea{
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 2.4rem;
+}
+
+.form-group input:focus , .form-group textarea{
+    outline: 0;
+}
+
+button{
+    padding: 2rem;
+    background-color: #E50914;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 2rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+  
+}

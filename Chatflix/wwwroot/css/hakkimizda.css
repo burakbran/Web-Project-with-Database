@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;   
+}
+
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    width: 100%;
+    font-family: Montserrat;
+    background-color:black;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    position: fixed;
+    z-index: 500;
+}
+
+#logo-box {
+    float: left;
+    padding-top: 0.3rem;
+}
+
+#logo-box .logo {
+    font-family: 'Bebas Neue';
+    letter-spacing: 5px;
+    color: #E50914;
+    font-size: 5rem;
+
+}
+
+#nav-links {
+    float: right;
+    margin-right: 3em;
+}
+
+#nav-links .nav-item {
+    float: left;
+    margin: 0.7rem;
+
+}
+
+#nav-links .nav-link , #nav-links .nav-linklast {
+   color: #fff;
+   font-size: 1.6rem;
+   font-weight: 700;
+   display: block;
+   padding: 1.6rem;
+   letter-spacing: 0.1rem;
+   transition: 0.4s;
+   
+}
+
+
+.nav-item:last-child{
+    background-color: #E50914;
+    border-radius: 2rem;
+}
+
+#nav-links .nav-link:hover {
+    color: #E50914;
+
+}
+
+header{
+    padding-top: calc(113px + 3rem);
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+header h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #E50914;
+}
+
+hr.cizgi{
+    margin: 0 57rem;
+    width: 40rem;
+    border: none;
+    border-top: 3px solid #E50914;
+}
+
+#hakkimizda-text{
+    margin-top: 5rem;
+    text-align: left;
+    
+}
+
+#hakkimizda-text .left{
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 23rem;
+    
+}
+
+#hakkimizda-text .right{
+    float: right;
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 23rem;
+    
+}
+
+#hakkimizda-text .text{
+    font-size: 2rem;
+}

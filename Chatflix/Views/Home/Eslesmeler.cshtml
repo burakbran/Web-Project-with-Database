@@ -1,0 +1,229 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eslesmeler</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="../css/match.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div id="logo-box">
+                <a asp-action="Eslesmeler" class="logo">
+                    CHATFLIX
+                </a>
+            </div>
+            <div id="nav-links">
+                <ul>
+
+                    <li class="nav-item">
+                        <a asp-action="Eslesmeler" class="nav-link">
+                            <i class="fas fa-user-friends"></i> Eşleşmeler
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-comment-dots"></i> Mesajlar
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">
+                                Hesabım <i class="fas fa-caret-down"></i>
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#">Ayarlar</a>
+                                <a asp-action="Chatflix">Çıkış</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+
+
+    <header>
+
+        <div class="baslik ">
+            <h3>Eşleşmeler</h3>
+            <hr>
+        </div>
+        <div class="card">
+            <div class="cards">
+
+                <div class="card-item">
+                    <div class="ayir">
+                        <div class="image">
+                            <img class="card-img" src="../img/burak.png" alt="">
+                        </div>
+                    </div>
+                    <h3>Burak Baran</h3>
+                    <p>22/İstanbul</p>
+                    <i><b>Dark (3.Sezon 5.Bölüm)</b></i>
+                    <div class="buton">
+                        <button type="button" class="buton1"><i class="fas fa-check"></i></button>
+                        <button type="button" class="buton2"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="uyum">
+                        <button type="button" class="buton3">Uyum %77</button>
+                    </div>
+
+                </div>
+                <div class="card-item">
+                    <div class="ayir">
+                        <div class="image">
+                            <img class="card-img" src="../img/ilayda.png" alt="">
+                        </div>
+                    </div>
+                    <h3>İlayda Özcan</h3>
+                    <p>22/İstanbul</p>
+                    <i><b>Black Mirror (2.Sezon 4.Bölüm)</b></i>
+                    <div class="buton">
+                        <button type="button" class="buton1"><i class="fas fa-check"></i></button>
+                        <button type="button" class="buton2"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="uyum">
+                        <button type="button" class="buton3">Uyum %100</button>
+                    </div>
+
+                </div>
+                <div class="card-item">
+                    <div class="ayir">
+                        <div class="image">
+                            <img class="card-img" src="../img/ati.png" alt="">
+                        </div>
+                    </div>
+                    <h3>Atilla Atasoy</h3>
+                    <p>23/İstanbul</p>
+                    <i><b>The Sopranos (2.Sezon 1.Bölüm)</b></i>
+                    <div class="buton">
+                        <button type="button" class="buton1"><i class="fas fa-check"></i></button>
+                        <button type="button" class="buton2"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="uyum">
+                        <button type="button" class="buton3">Uyum %80</button>
+                    </div>
+
+                </div>
+                <div class="card-item">
+                    <div class="ayir">
+                        <div class="image">
+                            <img class="card-img" src="../img/yusuf.png" alt="">
+                        </div>
+                    </div>
+                    <h3>Yusuf Furkan Coşkun</h3>
+                    <p>23/İstanbul</p>
+                    <i><b>Prison Break (5.Sezon 8.Bölüm)</b></i>
+                    <div class="buton">
+                        <button type="button" class="buton1"><i class="fas fa-check"></i></button>
+                        <button type="button" class="buton2"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="uyum">
+                        <button type="button" class="buton3">Uyum %85</button>
+                    </div>
+
+                </div>
+
+                <div class="card-item">
+                    <div class="ayir">
+                        <div class="image">
+                            <img class="card-img" src="../img/melisa.png" alt="">
+                        </div>
+                    </div>
+                    <h3>Melisa Yahşi</h3>
+                    <p>22/Azerbaycan</p>
+                    <i><b>Peaky Blinders (4.Sezon 2.Bölüm)</b></i>
+                    <div class="buton">
+                        <button type="button" class="buton1"><i class="fas fa-check"></i></button>
+                        <button type="button" class="buton2"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="uyum">
+                        <button type="button" class="buton3">Uyum %75</button>
+                    </div>
+
+                </div>
+
+                <div class="card-item">
+                    <div class="ayir">
+                        <div class="image">
+                            <img class="card-img" src="../img/omer.png" alt="">
+                        </div>
+                    </div>
+                    <h3>Ömer Tobay</h3>
+                    <p>22/İstanbul</p>
+                    <i><b>Breaking Bad (1.Sezon 3.Bölüm)</b></i>
+                    <div class="buton">
+                        <button type="button" class="buton1"><i class="fas fa-check"></i></button>
+                        <button type="button" class="buton2"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="uyum">
+                        <button type="button" class="buton3">Uyum %78</button>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

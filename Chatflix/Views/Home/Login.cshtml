@@ -1,0 +1,82 @@
+﻿@model Chatflix.Models.Users
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş</title>
+    <link rel="stylesheet" href="../css/giris.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <div id="logo-box">
+                <a asp-action="Chatflix" class="logo">
+                    CHATFLIX
+                </a>
+            </div>
+            <div id="nav-links">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            İndir
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-action="Hakkimizda" class="nav-link">
+                            Hakkımızda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-action="Iletisim" class="nav-link">
+                            İletişim
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-action="Login" class="nav-linklast">
+                            Oturum Aç
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <header id="log">
+        <form asp-controller="Home" asp-action="Login">
+            <div class="form">
+                <div class="title">Hoşgeldiniz</div>
+                <div class="subtitle">Giriş Bilgilerinizi Doldurunuz</div>
+                <br /> <span style="background:red ; color: white ; border-radius : 0.8rem ;"> @ViewBag.Message </span><br />
+                <div class="input-container">
+                    <input asp-for="UserName" id="firstname" class="input" type="text" placeholder="Kullanıcı Adı ">
+                </div>
+                <div class="input-container">
+                    <input asp-for="Password" id="sifre" class="input" type="password" placeholder="Sifre">
+                </div>
+                <button type="submit" class="submit">Giriş</button>
+            </div>
+        </form>
+</header>
+
+
+
+</body>
+</html>
